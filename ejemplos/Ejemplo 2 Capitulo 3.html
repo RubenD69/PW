@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--Fig: 3.20 autocomplte.html-->
+<!--El nuevo atributo autocomplete y el elemnto detalist de formularios Html5-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>El nuevo atributo autocomplete y el elemnto detalist de formularios Html5</title>
+    </head>
+
+    <body>
+        <button><a href="/index.html">regresar al menu</a></button>
+        <h1>Demo autocomplete y detalist</h1>
+        <p>Este Formulario demuestra el nuevo atributo autocomplte de HTML y el elemto detalist</p>
+
+        <!--Activar el autocomplete-->
+        <form method="post" autocomplete="on">
+            <p><label>Primer Nombre:
+                <input type="text" id="primernombre" placeholder="Primer Nombre" /> (Primer Nombre)
+            </label></p>
+            <p><label>Apellido:
+                <input type="text" id="Apellido" placeholder="Apellido" /> (Apellido)
+            </label></p>
+            <p><label>Email:
+                <input type="email" placeholder="nombre@dominio.com" /> (nombre@dominio.com)    
+            </label></p>
+            <p><label for="listadetexto">Mes de nacimiento:
+                <input type="text" id="Listatexto" placeholder="Seleccone un Mes" list="Meses" />
+                <details id="meses">
+                    <option value="Enero"></option>
+                    <option value="Febrero"></option>
+                    <option value="Marzo"></option>
+                    <option value="Abril"></option>
+                    <option value="Mayo"></option>
+                    <option value="junio"></option>
+                    <option value="julio"></option>
+                    <option value="Agosto"></option>
+                    <option value="Septiembre"></option>
+                    <option value="Octubre"></option>
+                    <option value="Noviembre"></option>
+                    <option value="Diciembre"></option>
+                </details>
+            </label></p>
+            <p><input type="subitm" value="Enviar"/>
+                <input type="reset" value="Borrar"/></p>
+        </form>
+    </body>
+</html>

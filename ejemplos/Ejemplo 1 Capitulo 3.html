@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!--Fig 3.1: Nuevos tipos de input en formularios-->
+<!--Los nuevos tipos de elemntos de formularios en Html5 y sus atributos-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nuevos tipos de input</title>
+    </head>
+
+
+    <body>
+        <button><a href="/index.html">regresar al menu</a></button>
+        <h1>Demo de nuevos tipos de input de HTML5</h1>
+        <P>Este formulario demuestra los nuevos tipos de elemntos input de HTML5
+            y los atributos placeholder, requerid y autofocus.</P>
+        
+        <form method="post" action="http://www.deitel.com">
+            <p>
+                <label>Color:
+                    <input type="color" autofocus/>
+                </label>
+            </p>
+
+            <p>	
+                <label>Fecha y Hora:
+                    <input type="datetime"/>
+                    (aaaa-mm-ddthh:mm+ff:gg, como 27-01-27T03:15)
+                </label>
+            </p>
+            
+            <p>
+                <label>Hora y fecha-local:
+                    <input type="datetime-local"/>
+                    (aaaa-mm-ddthh:mm, como 2012-01-27T03:15)                    
+                </label>
+            </p>
+
+            <p>
+                <label>Email:
+                    <input type="Email" placeholder="nombre@dominio.com" required/> (nombre@dominio.com)
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="month" /> (aaaa-mm)
+                </label>
+            </p>
+
+            <p>
+                <label>N&uacute;mero:
+                    <input type="number"
+                    min="0"
+                    max="7"
+                    step="1"
+                    value="4" />
+                </label> (Escriba un n&uacute;mero entre 0 y 7)
+            </p>
+
+            <p>
+                <label>Rango:
+                    0 <input type="range"
+                    min="0"
+                    max="20"
+                    value="10" /> 20
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    B&uacute;squeda:
+                    <input type="search" placeholder="Consulta de B&uacute;squeda" />
+                </label> (Escriba aqu&iacute; su consulta  de b&uacute;squeda.)
+            </p>
+
+            <p>
+                <label>Tel:
+                    <input type="tel" placeholder="(###) ###-###" pattern="\(\d{3}\) +\d{3}-\d{4}" required/>
+                    (###) ###-###
+                </label> 
+            </p>
+
+            <p>
+                <label>Hora:
+                    <input type="time" /> (hh:mm)
+                </label>
+            </p>
+
+            <p>
+                <label>URL:
+                    <input type="url" placeholder="http://www.nombredeminio.com" />
+                    (htpp://www.nombredeldominio.com)
+                </label>
+            </p>
+
+            <p>
+                <label>Semana:
+                    <input type="week" />
+                        (aaaa-Wnn, tal como 2012-W01)
+                </label>
+            </p>
+
+            <p>
+                <input type="subitm" value="Enviar"/>
+                <input type="reset" value="Borrar" />
+            </p>
+        </form>
+    </body>
+</html>
+<!--alt + 92 para la barra invertida \-->
+
