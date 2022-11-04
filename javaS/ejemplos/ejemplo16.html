@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!--fig 8.9: pruebadowhile.html-->
+<!--uso de la instruccion de repeticion do...while-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Uso de la instrucci&oacute;n de repetici&oacute;n do...while</title>
+        <script>
+            document.writeln("<button><a href='/index.html'>regresar al menu</a></button>");
+
+            var contador = 1;
+
+            do{
+                document.writeln("<h" + contador + ">&Eacute;ste es " +
+                "un encabezado de nivel h" + contador + "</h" + 
+                contador + ">");
+                ++contador;
+            } while(contador <= 6);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
